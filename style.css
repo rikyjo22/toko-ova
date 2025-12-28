@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: Sunflower;
+    src: url(font/Sunflower.otf);
+}
+
+@font-face {
+    font-family: Flowerbee;
+    src: url(font/Flowerbee.ttf);
+}
+
+@font-face {
+    font-family: Florist;
+    src: url(font/The\ Florist\ Handwriting.ttf);
+}
+.container{
+    background-image: url(img/bg/bunga.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    
+    display: flex;
+    /* background-color: lavender; */
+    justify-content: center;
+}
+
+header  .box{
+    display: flex;
+    flex: 1;
+    /* background-color: bisque; */
+    max-width: 1080px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+header .box a{
+    text-decoration: none;
+    color:#533223;
+}
+header .box a .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .box  a .logo p{
+    font-family: Florist;
+    font-size: 40px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+header .box nav{
+    flex: 1;
+    /* background-color: red; */
+}
+
+header .box  nav  ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    align-items: center;
+    /* background-color:blueviolet; */
+    height: 100%;
+}
+
+header .box nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+   overflow: hidden;
+    /* align-items: center; */
+    /* background-color: rgba(250, 235, 215, 0.555); */
+    
+}
+
+main .product{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    background-color: #c2c4a6cc;
+    padding: 10px;
+    height: 98%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main .product section{
+    flex: 1;
+    
+}
+main .product section h1{
+    
+    font-family:Flowerbee;
+    color: #533223;
+}
+
+main .product section .items{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+main .product section .items .item{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+   
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 5px;
+}
+
+main .product section .items .item img{
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+main .product section .items .item .name{
+    font-family:Sunflower;
+    font-size: 18px;
+    padding: 5px;
+}
+
+main .product section .items .item .price{
+    font-weight: bold;
+}
+
+main .product section .items .item .btn-order{
+    background-color: #5B7451;
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .contact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+main .contact h1{
+    font-family: Florist;
+    font-size: 120px;
+    color: #533223;
+    text-align: center;
+    line-height: 90px;
+}
+
+main  .contact h2{
+    color: #5B7451;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .contact .box{
+    display: flex;
+    gap: 10px;
+}
+
+main .contact h3{
+   color: #533223;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 30px;
+}
+main .contact .box div{
+    background-color: #5B7451;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    color: #C2C4A6;
+    border: 2px #C2C4A6 solid;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    font-family: Sunflower;
+}
+
+main .contact .box div a{
+   text-decoration: none;
+   color: #C2C4A6;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+main .contact .box div:hover{
+    transform: scale(1.1);
+}
+
+
