@@ -105,15 +105,15 @@ main .product{
     overflow-y: auto;
     border-radius: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 10px;
 
 }
 
 main .product section{
     flex: 1;
-    
 }
 main .product section h1{
-    
+    text-align: center;
     font-family:Flowerbee;
     color: #533223;
 }
@@ -122,6 +122,7 @@ main .product section .items{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 main .product section .items .item{
@@ -134,6 +135,12 @@ main .product section .items .item{
     padding: 5px;
     border-radius: 5px;
     gap: 5px;
+}
+main .product section .items .item:hover{
+    cursor: pointer;
+    background-color:#533223;
+    color: #C2C4A6;
+    scale: 1.1;
 }
 
 main .product section .items .item img{
@@ -158,6 +165,12 @@ main .product section .items .item .btn-order{
     padding: 10px;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
+}
+
+main .product section .items .item .btn-order:hover{
+    background-color: #668659;
+    
 }
 
 
