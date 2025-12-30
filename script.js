@@ -1,7 +1,7 @@
 let contactscreen=document.querySelector("main .contact");
-// contactscreen.style.display="none";
+contactscreen.style.display="none";
 let productscreen=document.querySelector("main .product")
-productscreen.style.display="none"
+// productscreen.style.display="none"
 
 let btn_contact=document.querySelector("header .box nav ul li a.contact")
 let btn_contact2=document.querySelector("header .box a .logo")
