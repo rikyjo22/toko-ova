@@ -36,8 +36,8 @@ btn_product2.addEventListener("click",function(){
 
 
  // Nomor WhatsApp tujuan (format internasional tanpa +, spasi, atau tanda hubung)
-//   const nomorWA = "6281234567890";
-  const nomorWA = "6285274948457";
+  const nomorWA = "6282249961418";
+
 
   // Seleksi semua tombol dengan class .btn-order
   const buttons = document.querySelectorAll(".btn-order");
@@ -49,10 +49,11 @@ btn_product2.addEventListener("click",function(){
 
       // Ambil nama produk dan harga dari elemen di dalam item
       const namaProduk = item.querySelector(".name").textContent.trim();
+      const ukuranProduk = item.querySelector(".info").textContent.trim();
       const hargaProduk = item.querySelector(".price").textContent.trim();
 
       // Susun pesan otomatis
-      const pesan = `Halo, saya ingin pesan produk:\n${namaProduk}\nDengan harga: ${hargaProduk}`;
+      const pesan = `Halo, saya ingin pesan!\nProduk: *${namaProduk}*\nInfo: ${ukuranProduk}\nHarga: ${hargaProduk}`;
 
       // Encode pesan agar aman di URL
       const encodedPesan = encodeURIComponent(pesan);

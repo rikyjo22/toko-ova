@@ -17,6 +17,11 @@
     font-family: Florist;
     src: url(font/The\ Florist\ Handwriting.ttf);
 }
+
+@font-face {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    src: url(font/Flowers.ttf);
+}
 .container{
     background-image: url(img/bg/bunga.png);
     width: 100vw;
@@ -90,6 +95,7 @@ main{
    overflow: hidden;
     /* align-items: center; */
     /* background-color: rgba(250, 235, 215, 0.555); */
+  
     
 }
 
@@ -98,7 +104,7 @@ main .product{
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    background-color: #c2c4a6cc;
+  
     padding: 10px;
     height: 98%;
     box-sizing: border-box;
@@ -111,11 +117,19 @@ main .product{
 
 main .product section{
     flex: 1;
+    /* background-color: white; */
 }
 main .product section h1{
+    background-color: rgba(255, 255, 255, 0.781);
+    padding: 10px;
     text-align: center;
-    font-family:Flowerbee;
-    color: #533223;
+    color:#533223;
+    border-bottom: #533223 2px solid;
+    text-transform:uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 main .product section .items{
@@ -123,6 +137,11 @@ main .product section .items{
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    
 }
 
 main .product section .items .item{
@@ -130,23 +149,36 @@ main .product section .items .item{
     display: flex;
     flex-direction: column;
     background-color:white;
-   
+   color:#5B7451;
     align-items: center;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     gap: 5px;
+    transition: background-color  0.2s ease;
+    box-shadow: 5px 5px 10px gray;
+
 }
 main .product section .items .item:hover{
     cursor: pointer;
-    background-color:#533223;
-    color: #C2C4A6;
-    scale: 1.1;
+    background-color: rgb(238, 230, 230);
+    color:#533223;
+    
+}
+
+main .product section .items .item .img-box{
+    width: 200px;
+    height: 200px;
+    /* background-color: #5B7451; */
+    display: flex;
+    justify-content: center;
+
 }
 
 main .product section .items .item img{
-    height: 150px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    width: 100%;
+    object-fit:scale-down;
+    border-radius: 10px;
+    /* background-color: black; */
 }
 
 main .product section .items .item .name{
@@ -172,7 +204,6 @@ main .product section .items .item .btn-order:hover{
     background-color: #668659;
     
 }
-
 
 
 
