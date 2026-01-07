@@ -115,12 +115,13 @@ header{
     box-sizing: border-box;
     margin: 30px auto;
     max-width: 1080px;
+    flex-wrap: wrap;
     
 }
 header h1{
     font-weight: 500;
     font-size: 3rem;
-    text-align: left;
+    text-align: justify;
 }
 
 header p{
@@ -144,25 +145,31 @@ header button{
 
 
 header .company-profile{
-    flex: 2;
+   flex: 1;
     padding-right: 30px;
     box-sizing: border-box;
     text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    
 }
 
 header .shop-img{
     background-image: url(img/toko.webp);
     border-radius: 2rem;
     box-shadow:5px 5px 5px rgb(204, 188, 188) ;
-    flex: 2;
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
     background-position: center;
-    min-width: 300px;
+    aspect-ratio: 3/4;
+    width: 300px;
+    margin: 20px auto;
+    
+    
 }
 
 .services{
