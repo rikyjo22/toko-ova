@@ -8,25 +8,26 @@
     src: url(font/The\ Florist\ Handwriting.ttf);
 }
 body{
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container{
-    width: 100vw;
+    width: 100%;
     /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 50px;
+    padding: 20px 20px;
     box-sizing: border-box;
     color: #252d59;
     
     
 }
 
-.navbar  header section{
+.navbar,header,section{
     min-width: 400px;
     box-sizing: border-box;
 }
@@ -121,7 +122,7 @@ header{
 header h1{
     font-weight: 500;
     font-size: 3rem;
-    text-align: justify;
+    text-align: left;
 }
 
 header p{
@@ -187,7 +188,7 @@ header .shop-img{
 }
 
 .services .box{
-    width: 400px;
+    max-width: 320px;
     height: 200px;
     border: 1px black solid;
     margin: 0px auto;
@@ -196,6 +197,7 @@ header .shop-img{
     display: flex;
     border-radius: 2rem;
     box-shadow: 5px 5px 5px gray;
+    flex: 1;
 }
 
 .services .box.stationary{
@@ -281,7 +283,7 @@ header .shop-img{
 }
 .contact{
     background-color: #252d59;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
